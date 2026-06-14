@@ -3,36 +3,67 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog post</title>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
             <nav>
                 <ul>
-                    <li>
-                        <a href="#about-me">About me</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact me</a>
-                    </li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-me">Contact me</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section>
-                <h1>Some Projects about something</h1>
+                <h1>Some Projects about <span>something</span></h1>
             </section>
             <section id="about-me">
                 <h2>About me</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus labore libero eligendi veritatis sequi commodi reiciendis quis, aut laborum, nostrum odio perferendis. Aspernatur, magnam. Nihil voluptatibus eius quidem, repellat dolor quae laborum, inventore consectetur sapiente, ipsam minus illum eaque? Perferendis, quod. Eum alias illo voluptate tempore ab nemo incidunt pariatur!
                 </p>
+            </section>
+            <section id="services">
+                <h2>Services</h2>
+                <div class="services">
+                    <article class="service-card">
+                        <div class="service-card-title-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 8h16"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"/>
+                                <path d="M8 4v4"/>
+                            </svg>
+                            <h3>Landing page</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laudantium eos, earum eveniet, quisquam distinctio illum aliquid assumenda nulla quaerat ullam.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card-title-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M6.5 6.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0"/>
+                                <path d="M2.5 21h8l-4 -7z"/><path d="M14 3l7 7"/><path d="M14 10l7 -7"/><path d="M14 14h7v7h-7z"/>
+                            </svg>
+                            <h3>Web design</h3>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi dolor necessitatibus at doloremque eaque minima beatae iusto consectetur delectus aspernatur.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-card-title-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"/>
+                                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/>
+                            </svg>
+                            <h3>Web applications</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, ex iusto magni dolorum porro, sit distinctio amet incidunt cumque animi facilis.</p>
+                    </article>
+                </div>
             </section>
             <section id="projects">
                 <h2>Projects</h2>
@@ -41,36 +72,28 @@
                         <a href="/project-1.html">
                             <img src="./images/unknown.jpg" alt="Image 1">
                             <h3>Project 1</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo maxime praesentium soluta expedita accusantium tenetur enim architecto commodi quasi eligendi!
-                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo maxime praesentium soluta expedita accusantium tenetur enim architecto commodi quasi eligendi!</p>
                         </a>
                     </li>
                     <li>
                         <a href="/project-2.html">
                             <img src="./images/unknown.jpg" alt="Image 2">
                             <h3>Project 2</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo maxime praesentium soluta expedita accusantium tenetur enim architecto commodi quasi eligendi!
-                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo maxime praesentium soluta expedita accusantium tenetur enim architecto commodi quasi eligendi!</p>
                         </a>
                     </li>
                     <li>
                         <a href="/project-3.html">
                             <img src="./images/unknown.jpg" alt="Image 3">
                             <h3>Project 3</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo maxime praesentium soluta expedita accusantium tenetur enim architecto commodi quasi eligendi!
-                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo maxime praesentium soluta expedita accusantium tenetur enim architecto commodi quasi eligendi!</p>
                         </a>
                     </li>
                     <li>
                         <a href="/project-4.html">
                             <img src="./images/unknown.jpg" alt="Image 4">
                             <h3>Project 4</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo maxime praesentium soluta expedita accusantium tenetur enim architecto commodi quasi eligendi!
-                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo maxime praesentium soluta expedita accusantium tenetur enim architecto commodi quasi eligendi!</p>
                         </a>
                     </li>
                 </ul>

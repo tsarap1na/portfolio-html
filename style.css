@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    padding: 20px;
+    border-bottom: 2px solid #333;
+    background-color: beige;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #545454;
+    font-weight: bold;
+}
+
+header nav ul a:hover {
+    color: #000000;
+}
+
+/* hero */
+main > section:first-child {
+    padding: 80px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+main > section:first-child h1 {
+    font-size: 3rem;
+}
+
+/* sections */
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+
+/* services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.service-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+
+.service-card-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+/* projects */
+#projects ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+}
+
+#projects ul a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+#projects ul a:hover {
+    border-color: beige;
+}
+
+#projects img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 8px;
+    background: #eee;
+}
+
+/* contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button {
+    padding: 10px;
+    background: beige;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d5d5b9;
+}
+
+/* footer */
+footer {
+    border-top: 2px solid #333;
+    padding: 20px 0;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    color: #000000;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+    main > section:first-child h1 {
+        font-size: 2rem;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    #projects ul {
+        grid-template-columns: 1fr;
+    }
+}
